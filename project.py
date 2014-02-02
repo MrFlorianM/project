@@ -113,7 +113,7 @@ def DrawGLScene():
     # my rotation of the whole world to know what i'm doing...
     global alpha
     glRotatef(alpha, 0, 1, 0)
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_BYTE, newindices)
+
 
 
 
