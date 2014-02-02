@@ -113,8 +113,8 @@ def DrawGLScene():
     # my rotation of the whole world to know what i'm doing...
     global alpha
     glRotatef(alpha, 0, 1, 0)
-	for item in quads : 
-		item.drawQuads
+    for item in quads :
+		item.drawQuad()
 
 
 
