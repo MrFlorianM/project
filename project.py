@@ -74,7 +74,7 @@ quads= [ quad("floor", 0.0, 0.0, 0.0, 0., 0., -1., 1., 0., 0., 1.0, 1., 0.),
 
 # A general OpenGL initialization function.  Sets all of the initial parameters.
 def InitGL(Width, Height):				# We call this right after our OpenGL window is created.
-    glClearColor(0.0, 0.0, 1.0, 0.0)	# This Will Clear The Background Color To Black
+    glClearColor(0.0, 0.0, 0.0, 0.0)	# This Will Clear The Background Color To Black
     glClearDepth(1.0)					# Enables Clearing Of The Depth Buffer
     glDepthFunc(GL_LESS)				# The Type Of Depth Test To Do
     glEnable(GL_DEPTH_TEST)				# Enables Depth Testing
@@ -113,7 +113,8 @@ def DrawGLScene():
     # my rotation of the whole world to know what i'm doing...
     global alpha
     glRotatef(alpha, 0, 1, 0)
-
+	for item in quads : 
+		item.drawQuads
 
 
 
