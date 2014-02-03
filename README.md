@@ -3,6 +3,8 @@ project
 
 groupe salle
 
+PIERRE C'EST UN BGCOLOR !
+
 
 This code includes a first "quad" object, 
 the glut init phases and a simple drawing of floor, wall and barrier around it...
